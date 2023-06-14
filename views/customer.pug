@@ -1,0 +1,22 @@
+html
+  head
+    title Customer Application
+  body
+    h1 Customer List
+    table
+      tr
+        th ID
+        th First Name
+        th Last Name
+        th Email
+        th Phone
+      each customer in customers
+        tr
+          td= customer.id
+          td= customer.firstname
+          td= customer.lastname
+          td= customer.email
+          td= customer.phone
+
+    h2 Add New Customer
+    a(href='/customers/new') Add Customer
